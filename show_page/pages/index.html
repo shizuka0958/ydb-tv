@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>上海电信智能客流</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../dist/css/index.css">
+</head>
+<body>
+    <div class="container">
+    <div class="row wid-100 margin-bottom">
+        <div class="title wid-50 white">上海电信智能客流
+        </div>
+        <div class="time-label white wid-50 mytime">
+            <span class="blue-circle"></span>
+            <span>live</span>
+            <span id="date"></span>
+            <span id="time"></span>
+        </div>
+    </div>
+
+    <div class="row wid-100">
+        <div class='left'>
+            <div class="row">
+                <div class="card" style="width:32%;height:130px">
+                    <div class="dropdown">
+                        <div class="card-title" id="currentcamera">展厅</div>
+                        <div class="dropdown-content" id="cameraList">
+                            <p>展厅</p>
+                            <p>大厅</p>
+                        </div>
+                    </div>
+                    <div class="card-body blue">上海电信展厅</div>
+                </div>
+
+                <div class="card" style="width:20%;height:130px">
+                    <div class="card-title">本月<div class="title-tip">访客人次</div></div>
+                    
+                    <div class="card-body red" id="month"></div>
+                </div>
+
+                <div class="card blue-card" style="width:20%;height:130px">
+                    <div class="card-title white">今日<div class="title-tip white">访客人次</div></div>
+                    
+                    <div class="card-body white" id="today"></div>
+                </div>
+
+                <div class="card" style="width:20%;height:130px">
+                    <div class="card-title">昨日<div class="title-tip">访客人次</div></div>
+                    
+                    <div class="card-body red" id="yesterday"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="card">
+                    <div class="card-title">最新访客</div>
+                    <div class="card-body" id="psnlist">
+                        
+                    </div>
+                </div>
+
+                <div class="video" id="video">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="right card">
+            <div class="card-title">最近七天客流趋势</div>
+            <div id="7day"></div>
+            <div class="card-title">男女比例及年龄分布</div>
+            <div id="age"></div>
+            <div id="sex"></div>
+        </div>
+    </div>
+    </div>
+	<script src="https://gw.alipayobjects.com/os/lib/antv/g2/3.4.10/dist/g2.min.js"></script>
+    <script src="../dist/js/plugins/jquery/jquery.min.js"></script>
+    <script src="../dist/js/cyberplayer-3.4.1/cyberplayer.js"></script>
+    <script src="../dist/js/show.js"></script>
+</body>
+</html>
